@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_575dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_386dp"
+            android:background="@mipmap/beijing02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.dlc.commonlibrary.ui.widget.TitleBar
+                android:id="@+id/titleBar"
+                style="@style/TitleStyle"
+                app:titleText="@string/gerenzhongxin" />
+
+            <ImageView
+                android:id="@+id/head_img"
+                android:layout_width="@dimen/normal_131dp"
+                android:layout_height="@dimen/normal_131dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_112dp"
+                android:src="@mipmap/chenggongda" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/jiaoyihao"
+                android:textColor="@color/f3333"
+                android:textSize="@dimen/normal_28dp" />
+
+            <TextView
+                android:id="@+id/user_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_5dp"
+                android:text="123456789123"
+                android:textColor="@color/f9999"
+                android:textSize="@dimen/normal_28dp" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_30dp"
+        android:background="@color/color_background" />
+
+    <RelativeLayout
+        android:id="@+id/songcan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_111dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_31dp"
+            android:drawableLeft="@mipmap/songcan"
+            android:drawablePadding="@dimen/normal_15dp"
+            android:gravity="center"
+            android:text="@string/wodesongcan"
+            android:textColor="@color/f3333"
+            android:textSize="@dimen/normal_28dp" />
+
+        <ImageView
+            android:layout_width="@dimen/normal_20dp"
+            android:layout_height="@dimen/normal_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_31dp"
+            android:src="@mipmap/ic_01" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+        android:background="@color/color_background" />
+
+    <RelativeLayout
+        android:id="@+id/setting_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_111dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_31dp"
+            android:drawableLeft="@mipmap/shizhi"
+            android:drawablePadding="@dimen/normal_15dp"
+            android:gravity="center"
+            android:text="@string/shezhi"
+            android:textColor="@color/f3333"
+            android:textSize="@dimen/normal_28dp" />
+
+        <ImageView
+            android:layout_width="@dimen/normal_20dp"
+            android:layout_height="@dimen/normal_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_31dp"
+            android:src="@mipmap/ic_01" />
+    </RelativeLayout>
+
+</LinearLayout>

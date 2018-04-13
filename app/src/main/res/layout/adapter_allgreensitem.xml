@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+        android:background="@color/color_background"
+        android:layout_marginLeft="@dimen/normal_30dp"
+        android:layout_marginRight="@dimen/normal_57dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_180dp">
+        <ImageView
+            android:id="@+id/adapter_all_img"
+            android:layout_width="@dimen/normal_120dp"
+            android:layout_height="@dimen/normal_120dp"
+            android:src="@mipmap/songcan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/adapter_all_img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/normal_110dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            >
+            <TextView
+                android:id="@+id/adapter_all_item_geers_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="番茄炒蛋"
+                android:textSize="@dimen/normal_28dp"
+                android:textColor="@color/f3333"
+                android:layout_marginTop="@dimen/normal_10dp"
+                />
+            <TextView
+                android:id="@+id/adapter_all_item_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="¥ 18.00"
+                android:textSize="@dimen/normal_28dp"
+                android:textColor="@color/f3333"
+                android:layout_marginTop="@dimen/normal_10dp"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/adapter_all_item_mub_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_57dp"
+            android:textColor="@color/color_ff9557"
+            android:textSize="@dimen/normal_28dp"
+            tools:text="x 1" />
+    </RelativeLayout>
+ 
+
+</LinearLayout>

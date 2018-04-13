@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <cn.dlc.commonlibrary.ui.widget.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/TitleBarStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/normal_24dp"
+        android:paddingRight="@dimen/normal_24dp"
+        android:paddingTop="@dimen/normal_20dp">
+
+        <FrameLayout
+            android:id="@+id/fl_query"
+            android:layout_width="@dimen/normal_345dp"
+            android:layout_height="@dimen/normal_345dp"
+            android:background="@drawable/shape_white_r10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_001" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/normal_50dp"
+                android:text="@string/chaxun"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/normal_32sp" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/fl_set_take_out"
+            android:layout_width="@dimen/normal_345dp"
+            android:layout_height="@dimen/normal_345dp"
+            android:background="@drawable/shape_white_r10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_002" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/normal_50dp"
+                android:text="@string/fangzhiwaimai"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/normal_32sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/normal_24dp"
+        android:paddingRight="@dimen/normal_24dp"
+        android:paddingTop="@dimen/normal_20dp">
+
+        <FrameLayout
+            android:id="@+id/fl_clean_device"
+            android:layout_width="@dimen/normal_345dp"
+            android:layout_height="@dimen/normal_345dp"
+            android:background="@drawable/shape_white_r10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_003" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/normal_50dp"
+                android:text="@string/qingji"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/normal_32sp" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/fl_man_made"
+            android:layout_width="@dimen/normal_345dp"
+            android:layout_height="@dimen/normal_345dp"
+            android:background="@drawable/shape_white_r10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_004" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/normal_50dp"
+                android:text="@string/shoudongcaozuo"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/normal_32sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

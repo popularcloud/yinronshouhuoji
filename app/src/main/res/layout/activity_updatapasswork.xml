@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <cn.dlc.commonlibrary.ui.widget.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/TitleBarStyle"
+        app:titleText="@string/xiugaimima"
+        />
+
+    <LinearLayout
+        android:layout_width="@dimen/normal_591dp"
+        android:layout_height="@dimen/normal_91dp"
+        android:layout_marginLeft="@dimen/normal_80dp"
+        android:layout_marginBottom="@dimen/normal_19dp"
+        android:background="@drawable/shap_passwor_edit"
+        android:layout_marginTop="@dimen/normal_100dp"
+        >
+        <EditText
+            android:id="@+id/username_jiu_passwork_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/jiumima"
+            android:paddingLeft="@dimen/normal_15dp"
+            android:textSize="@dimen/normal_28dp"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/normal_591dp"
+        android:layout_height="@dimen/normal_91dp"
+        android:layout_marginLeft="@dimen/normal_80dp"
+        android:layout_marginBottom="@dimen/normal_19dp"
+        android:background="@drawable/shap_passwor_edit"
+        >
+        <EditText
+            android:id="@+id/username_new_passwork_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/xinmima"
+            android:paddingLeft="@dimen/normal_15dp"
+            android:textSize="@dimen/normal_28dp"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/normal_591dp"
+        android:layout_height="@dimen/normal_91dp"
+        android:layout_marginLeft="@dimen/normal_80dp"
+        android:layout_marginBottom="@dimen/normal_19dp"
+        android:background="@drawable/shap_passwor_edit"
+        >
+        <EditText
+            android:id="@+id/username_again_new_passwork_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/zaixinma"
+            android:paddingLeft="@dimen/normal_15dp"
+            android:textSize="@dimen/normal_28dp"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/updata_passwork_bt"
+        style="@style/CommonButtonStyle"
+        android:layout_width="@dimen/normal_600dp"
+        android:layout_height="@dimen/normal_90dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/queding" />
+
+</LinearLayout>

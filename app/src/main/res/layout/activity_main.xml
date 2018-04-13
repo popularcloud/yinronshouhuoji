@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.dlc.commonlibrary.ui.widget.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        />
+
+    <cn.dlc.commonlibrary.ui.widget.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <cn.dlc.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_home"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/shouye01"
+            app:tabIconSelected="@mipmap/shouye02"
+            app:tabText="@string/shouye" />
+
+        <cn.dlc.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_message"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/xiaoxi01"
+            app:tabIconSelected="@mipmap/xiaoxi02"
+            app:tabText="@string/xiaoxi" />
+        <cn.dlc.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_mine"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/wode01"
+            app:tabIconSelected="@mipmap/wode02"
+            app:tabText="@string/wode" />
+    </cn.dlc.commonlibrary.ui.widget.alphatabs.AlphaTabsIndicator>
+
+</LinearLayout>

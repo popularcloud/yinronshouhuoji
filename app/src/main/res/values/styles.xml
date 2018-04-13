@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="@style/TranslucentStatus">
+        <!-- 下面代码可选，TranslucentStatus为沉浸状态栏主题，配合下面BaseActivity代码使用 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAppTheme" parent="BaseAppTheme">
+
+    </style>
+
+    <style name="CommonButtonStyle">
+        <item name="android:background">@drawable/selector_button_ffb758_ff9557_r40</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/normal_32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CommonCancelButtonStyle">
+        <item name="android:background">@drawable/selector_button_white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/normal_32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TitleBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/normal_100dp</item>
+        <item name="fitStatusBar">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="leftDrawable">@mipmap/ic_arrow02</item>
+        <item name="showLeftImage">true</item>
+    </style>
+    <style name="TitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/normal_128dp</item>
+        <item name="fitStatusBar">true</item>
+        <item name="android:background">#00FFFFFF</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="showLeftImage">false</item>
+    </style>
+
+    <!--主页面底部tab主题-->
+    <style name="MainTabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/clickable_bg_borderless</item>
+        <item name="android:paddingBottom">@dimen/normal_10dp</item>
+        <item name="tabTextSize">@dimen/normal_23sp</item>
+        <item name="textColorNormal">@color/color_999</item>
+        <item name="textColorSelected">@color/color_ff9557</item>
+    </style>
+
+    <!--空白数据布局参数-->
+    <style name="EmptyViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="empty_layout">@layout/include_common_empty</item>
+        <item name="image_view_id">@+id/iv_empty_icon</item>
+        <item name="text_view_id">@+id/tv_empty_text</item>
+    </style>
+
+    <style name="DialogHint" parent="android:style/Theme.Dialog">
+        <!-- 第二个就是弹出dialog后，下面的activity层的颜色啦-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--这里设置为没有标题栏，如果这里不设置的话，你会发现无论布局怎么改都会出现多一栏白色 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--让特定尺寸的对话框可以居中显示，并且设置的尺寸有效 todo 下面这句有问题，会导致padding失效，未知错乱等-->
+        <!--<item name="android:layout_gravity">center</item>-->
+    </style>
+</resources>

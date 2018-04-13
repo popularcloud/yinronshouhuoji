@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--波特率列表-->
+    <integer-array name="baudrates">
+        <item>110</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>56000</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>128000</item>
+        <item>256000</item>
+    </integer-array>
+
+
+    <dimen name="default_button_height">@dimen/normal_120dp</dimen>
+    <dimen name="horizontal_margin">@dimen/normal_16dp</dimen>
+    <dimen name="default_text_size">@dimen/normal_36dp</dimen>
+    <dimen name="bigger_text_size">@dimen/normal_40dp</dimen>
+
+    <color name="spinner_pressed">#ffa0a7cc</color>
+    <color name="spinner_disabled">#e4e4e4</color>
+    <color name="spinner_normal">#55a0a7cc</color>
+
+    
+    <string name="no_serial_device">找不到串口设备</string>
+
+
+</resources>

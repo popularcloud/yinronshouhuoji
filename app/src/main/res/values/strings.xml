@@ -1,0 +1,173 @@
+<resources>
+
+    <string name="app_name">银融科技</string>
+
+    <!--登录-->
+    <string name="qingshurushoujihao">请输入手机号</string>
+    <string name="qingshuruyanzhengma">请输入验证码</string>
+    <string name="huoquyanzhengma">获取验证码</string>
+    <string name="denglu">登录</string>
+    <string name="qingshuruzhengquedeshoujihao">请输入正确的手机号</string>
+    <string name="qingshuruzhengquedeyanzhengma">请输入正确的验证码</string>
+
+    <!--首页-->
+    <string name="shouye">首页</string>
+    <string name="xiaoxi">消息</string>
+    <string name="wode">我的</string>
+    <string name="shangjiaapp">商家APP</string>
+    <string name="gerenzhongxin">个人中心</string>
+    <string name="shebeibianhao">设备编号</string>
+    <string name="shebeimingcheng">设备名称</string>
+    <string name="dizhi">地址</string>
+
+    <!--toast-->
+    <string name="meiyougengduoshuju">没有更多数据</string>
+    <string name="toast_txt_9">再按一次退出程序</string>
+
+    <!--设置-->
+    <string name="shezhi">设置</string>
+    <string name="qingchunhuanxun">清除缓存</string>
+    <string name="banbengenxin">版本跟新</string>
+    <string name="guanyuwomen">关于我们</string>
+    <string name="yinrongkeji">银融科技</string>
+    <string name="dangqqianbanben">当前版本</string>
+    <string name="kefudianhua">客服电话</string>
+    <string name="gongsiyinwen">Dongguan DLC Online Technology Co.,Ltd</string>
+    <string name="gongsi">银融科技有限公司</string>
+    <string name="xiugaimima">修改密码</string>
+
+    <!--个人资料-->
+    <string name="gerenzil">个人资料</string>
+    <string name="yongfuming">用户名</string>
+    <string name="touxiang">头像</string>
+    <string name="lixiaolong">李小龙</string>
+    <string name="xingbie">性别</string>
+    <string name="nan">男</string>
+    <string name="nu">女</string>
+    <string name="qingshuru">请输入</string>
+    <string name="queding">确定</string>
+
+    <!--修改密码-->
+    <string name="jiumima">请输入旧密码</string>
+    <string name="xinmima">请输入新密码</string>
+    <string name="zaixinma">请再次输入新密码</string>
+    <string name="xiugaichenggong">修改成功！</string>
+    <string name="xiugaishibai">修改失败！</string>
+    <string name="quxiao">取消</string>
+
+    <!--消息-->
+    <string name="dingcandingdan">客户:%1$s,预约商品名称: %2$s\n预约配送时间: %3$s\n请注意处理!</string>
+    <string name="jujuedingdan">拒绝订单</string>
+    <string name="jieshoudingdan">接受订单</string>
+    <string name="tishi">提示</string>
+    <string name="shifouquerenjujuedingdan">是否确认拒绝订单?</string>
+    <string name="shifouquerenjieshoudingdan">是否确认接受订单?</string>
+    <string name="chenggongjujuedingdan">成功拒绝订单!</string>
+    <string name="jujueshibai">拒绝失败!</string>
+    <string name="chenggongjieshoudingdan">成功接受订单!</string>
+    <string name="jieshoushibai">接受失败!</string>
+
+    <!--我的送餐-->
+    <string name="wodesongcan">我的送餐</string>
+    <string name="gongduos">共%d件商品</string>
+    <string name="xiangqing">详情</string>
+    <string name="peisongshijian">配送地址</string>
+    <string name="daodashijian">到达时间</string>
+    <string name="dingdanbianhao">订单编号</string>
+    <string name="chuangjianshijian">创建时间</string>
+    <string name="fukuanshijian">付款时间</string>
+    <string name="jiaoyihao">交易号</string>
+    <string name="songdaoshijian">送达时间</string>
+
+    <!--设备详情-->
+    <string name="gezi">格子</string>
+    <string name="zongshu_"><![CDATA[
+<font color="#999999">总数 </font><font color="#333333">%d</font>
+    ]]></string>
+    <string name="danweige">单位(个)</string>
+    <string name="kongcang">空仓 %d</string>
+    <string name="waimai">外卖 %d</string>
+    <string name="konghe">空盒 %d</string>
+    <string name="yuding">预定 %d</string>
+    <string name="guzhang">故障 %d</string>
+    <string name="guoqi">过期 %d</string>
+    <string name="weiguanmen">未关门 %d</string>
+    <string name="chakanxiangqing">查看详情</string>
+    <string name="tuliquejiao">(图例缺角为未关门状态)</string>
+    <string name="weisheding">未设定</string>
+
+    <!--外卖列表-->
+    <string name="waimailiebiao">外卖列表</string>
+    <string name="gezibianhao">格子编号</string>
+    <string name="shangpinmingcheng">商品名称</string>
+    <string name="shangjiashijian">上架时间</string>
+    <string name="_fen">%1$s %2$d份</string>
+
+    <!--预定列表-->
+    <string name="yudingliebiao">预定列表</string>
+    <string name="yudingshijian">预定时间</string>
+
+    <!--设备控制-->
+    <string name="chaxun">查询</string>
+    <string name="fangzhiwaimai">放置外卖</string>
+    <string name="qingji">清机</string>
+    <string name="shoudongcaozuo">手动操作</string>
+
+    <!--清机-->
+    <string name="shifoudakaisuoyoucangmeng">是否打开所有仓门？</string>
+    <string name="tiaoguo">跳过</string>
+    <string name="qingjicuowu">系统检测到%s号格子有物品存放，请检查物品是否被清空，传感器是否正常如格口物品已经被清空，系统仍显示有物品请按确定键，系统自动将该格口标注为障碍</string>
+    <string name="qingjichenggong">清机成功，本次共标记故障窗口%s处，系统自动屏蔽该格口，不再分配使用，请尽快维修</string>
+    <string name="qingshuruguzhanggekoubianhao">请输入故障格口编号</string>
+    <string name="dakaicangmen">配售员查选该售卖机仓门状态，正常情况下查询结果应该为门全部打开，否则说明该格口门锁故障或门传感器故障，输入故障格口编号，无故障直接点击确认!</string>
+    <string name="qingguangbisuoyoucangmen">请关闭所有仓门，完成后点击确认</string>
+
+    <!--手动操作-->
+    <string name="shurugezihao">输入格子号，开门、取餐都行</string>
+    <string name="qingshurugezihaokaimen">请输入格子号开门</string>
+    <string name="toast_qingshurugezihao">请输入格子号</string>
+    <string name="shifoukaiqi">是否开启 %s号格子？</string>
+    <string name="chenggongkaiqi">成功开启!</string>
+    <string name="kaiqishibai">开启失败!</string>
+
+    <!--设定地址-->
+    <string name="qingshuruguanjianzisousuo">请输入关键字搜索</string>
+    <string name="dingweidangqianweizhi">定位当前位置</string>
+    <string name="fujinweizhi">附近位置</string>
+    <string name="qingshuruguanjianzi">请输入关键字</string>
+
+    <!--放置外卖-->
+    <string name="dangqianshebeikeyongcang">当前设备可用仓数量</string>
+    <string name="bencifangcanzongshuliang">本次放餐总数量</string>
+    <string name="lijifangzhi">立即放置</string>
+    <string name="shangpin">商品</string>
+    <string name="_cangmendakai">%s号仓门已打开\n请核对好商品后放入仓门内\n放置完成后请关闭仓门</string>
+    <string name="ge">个</string>
+    <string name="yuan_">¥ %.2f</string>
+    <string name="zongshuliangbunengweiling">总数量不能为0</string>
+    <string name="qingxuanzeshangpin">请选择商品</string>
+    <string name="jieshufangzhi">结束放置</string>
+    <string name="fangrushuliang_"><![CDATA[
+<font color="#999999">请选择放入商品的种类及数量本次还可以放入数量</font><font color="#ff9557">  %d  份</font>
+    ]]></string>
+    <string name="bencifangzhiwancheng">本次放餐完成!</string>
+    <string name="name_fen"><![CDATA[
+<font color="#999999">%1$s</font><font color="#333333">  %2$d 份</font><br/>
+    ]]></string>
+    <string name="keyongcangkou_ge"><![CDATA[
+<font color="#999999">当前可用仓口</font><font color="#333333">  %d 个</font>
+    ]]></string>
+    <string name="jixufangzhi">继续放置</string>
+    <string name="fanhuishouye">返回首页</string>
+    <string name="qingxuanzeshuliang">请选择数量</string>
+
+    <string name="permission">权限(permission)</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="get_code">获取验证码</string>
+
+</resources>

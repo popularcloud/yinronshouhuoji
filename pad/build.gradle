@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'winds'
+            keyPassword '039468'
+            storeFile file('../winds.jks')
+            storePassword '039468'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "cn.dlc.yinrongshouhuoji.pad"
+
+        minSdkVersion 15
+        targetSdkVersion 27
+
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+repositories {
+
+    flatDir {
+        dirs 'libs' // 找到module的aar
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.9'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // 添加公共库依赖
+    implementation 'cn.dlc.android:common-library:1.0.15'
+    // 屏幕适配，根据需求选一个，不要全填上，n后面那个数字代表尺寸文件中有0~n个dimen
+    implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.0'
+    //butterknife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okio:okio:okio-1.11.0'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.gittjy:LoadingDialog:1.0.2'
+    // 二维码生成
+    implementation 'cn.dlc.android:zxing:1.0'
+    // 串口
+    implementation 'com.github.licheedev.Android-SerialPort-API:serialport:1.0.1'
+
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">银融平板端</string>
+    <string name="fetch_code">获取验证码</string>
+    <string name="shoujihaomabunengweikong">手机号码不能为空！</string>
+    <string name="zhengzaifasong">正在发送</string>
+    <string name="fasongchenggong">发送成功</string>
+    <string name="yanzhengmabunengweikong">验证码不能为空</string>
+    <string name="zhengzaidenglu">正在登录</string>
+    <string name="dengluchenggong">登录成功</string>
+</resources>

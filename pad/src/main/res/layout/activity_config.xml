@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <cn.dlc.commonlibrary.ui.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:background="@color/colorPrimary"
+        app:showLeftImage="true"
+        app:titleText="配置"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        style="@style/HorizontalLineStyle"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:text="选择串口"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_devices"
+            style="@style/FullScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_8dp"
+            android:layout_weight="1"
+            android:background="@color/spinner_pressed"
+            android:textSize="@dimen/default_text_size"
+            tools:entries="@array/baudrates" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:text="选择波特率"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_baudrate"
+            style="@style/FullScreen"
+            android:layout_width="@dimen/normal_200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/spinner_pressed"
+            android:textSize="@dimen/default_text_size"
+            tools:entries="@array/baudrates" />
+
+        <Button
+            android:id="@+id/btn_select_device"
+            style="@style/CommonButtonStyle"
+            android:layout_width="@dimen/normal_240dp"
+            android:text="选择串口" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/HorizontalLineStyle">
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="商家设备编号：" />
+
+
+        <EditText
+            android:id="@+id/et_device_id"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="输入设备编号"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="商家设备密码：" />
+
+        <EditText
+            android:id="@+id/et_device_pwd"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="输入设备密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/CommonButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登记设备" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/HorizontalLineStyle">
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="仓口编号：" />
+
+        <Spinner
+            android:id="@+id/spinner_doors"
+            style="@style/FullScreen"
+            android:layout_width="@dimen/normal_300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:textSize="@dimen/default_text_size"
+            tools:entries="@array/door_nums" />
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="灯光样式：" />
+
+        <Spinner
+            android:id="@+id/spinner_lights"
+            style="@style/FullScreen"
+            android:layout_width="@dimen/normal_300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:textSize="@dimen/default_text_size"
+            tools:entries="@array/light_types_str" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/HorizontalLineStyle">
+
+        <Button
+            android:id="@+id/btn_open_door"
+            style="@style/CommonButtonStyle"
+            android:text="打开仓口" />
+
+        <Button
+            android:id="@+id/btn_open_lighting_light"
+            style="@style/CommonButtonStyle"
+            android:text="打开照明灯" />
+
+        <Button
+            android:id="@+id/btn_open_door_light"
+            style="@style/CommonButtonStyle"
+            android:text="打开仓口灯" />
+
+        <Button
+            android:id="@+id/btn_open_some_lights"
+            style="@style/CommonButtonStyle"
+            android:text="连续操作多个仓口灯" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/HorizontalLineStyle">
+
+        <Button
+            android:id="@+id/btn_query_door_lock"
+            style="@style/CommonButtonStyle"
+            android:text="查询门锁" />
+
+        <Button
+            android:id="@+id/btn_query_goods"
+            style="@style/CommonButtonStyle"
+            android:text="查询货物" />
+
+        <Button
+            android:id="@+id/btn_query_lock_goods"
+            style="@style/CommonButtonStyle"
+            android:text="查询锁和货物" />
+
+        <Button
+            android:id="@+id/btn_open_query"
+            style="@style/CommonButtonStyle"
+            android:text="打开仓位并查询门锁、货物" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

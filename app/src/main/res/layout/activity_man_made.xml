@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <cn.dlc.commonlibrary.ui.widget.TitleBar
+        android:id="@+id/titleBar"
+        style="@style/TitleBarStyle"
+        app:titleText="@string/shoudongcaozuo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/normal_24dp"
+        android:text="@string/shurugezihao"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/normal_32sp" />
+
+    <EditText
+        android:id="@+id/edit_grid_no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/qingshurugezihaokaimen"
+        android:paddingLeft="@dimen/normal_24dp"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="@dimen/normal_32sp" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/CommonButtonStyle"
+        android:layout_width="@dimen/normal_600dp"
+        android:layout_height="@dimen/normal_80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_80dp"
+        android:text="@string/queding" />
+
+</LinearLayout>

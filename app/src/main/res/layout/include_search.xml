@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_100dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_24dp"
+        android:src="@mipmap/ic_arrow02"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_70dp"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        android:layout_marginRight="@dimen/normal_24dp"
+        android:background="@drawable/shape_stroke_r40"
+        android:paddingLeft="@dimen/normal_40dp"
+        android:paddingRight="@dimen/normal_40dp">
+
+        <EditText
+            android:id="@+id/edit_key_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@null"
+            android:hint="@string/qingshuruguanjianzisousuo"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/color_999"
+            android:textSize="@dimen/normal_28sp" />
+
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/normal_20dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@mipmap/search" />
+
+    </FrameLayout>
+
+</LinearLayout>
